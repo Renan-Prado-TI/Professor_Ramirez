@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f0f0f0; /* Cor de fundo suave para as laterais */
+  }
+  
+  .fundo {
+    background-image: url('../fundo-sala.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Imagem do professor */
+  .professor {
+    position: absolute;
+    bottom: 50px;
+    width: 100px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Estilo quando ampliado */
+  .professor.ativo {
+    transform: scale(1.5);
+    z-index: 1;
+  }
+  
+  /* Balão de fala */
+  .fala-do-professor {
+    display: none;
+    position: absolute;
+    bottom: 200px;
+    background: white;
+    border: 2px solid black;
+    padding: 15px 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+  }
+  
+  
+  /* Botão */
+  .botao {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #0099cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  }
+  
+  .botao:hover {
+    background: #0077aa;
+  }
